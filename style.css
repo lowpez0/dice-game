@@ -8,6 +8,7 @@ body {
 }
 
 .rec {
+    position: relative;
     width: 60%;
     height: 550px;
     border-radius: 5px;
@@ -58,4 +59,29 @@ body {
 .current-score {
     margin-top: 10px;
     font-size: 35px;
+}
+
+.btn {
+    position: absolute;
+    font-size: 17px;
+    border-radius: 15px;
+    border: none;
+}
+
+.btn-ng {
+    top: 40px;
+    left: 39%;
+    padding: 7px 50px;
+}
+
+.btn-rd {
+    top: 71%;
+    left: 24rem;
+    padding: 9px 18px;
+}
+
+.btn-ho {
+    top: 82%;
+    left: 25.4rem;
+    padding: 9px 13px;
 }
