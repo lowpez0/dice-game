@@ -76,13 +76,13 @@ body {
 
 .btn-rd {
     top: 71%;
-    left: 24rem;
+    left: 44%;
     padding: 9px 18px;
 }
 
 .btn-ho {
     top: 82%;
-    left: 25.4rem;
+    left: 46%;
     padding: 9px 13px;
 }
 
@@ -90,6 +90,6 @@ body {
     position: absolute;
     width: 90px;
     top: 25%;
-    left: 26rem;
+    left: 46%;
     box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.25);
 }
