@@ -8,29 +8,29 @@
 <body>
 
 <div class="rec">
-    <button class="btn btn-ng">🔄NEW GAME</button>
-    <button class="btn btn-rd">🎲ROLL DICE</button>
-    <button class="btn btn-ho">✋🏼HOLD</button>
-
-    <img class="dice" src="dice-1.png" alt="dice">
+    <button class="btn" id="btn-ng">🔄NEW GAME</button>
+    <button class="btn" id="btn-rd">🎲ROLL DICE</button>
+    <button class="btn" id="btn-ho">✋🏼HOLD</button>
+    <img class="dice hidden" src="dice-1.png" alt="dice">
 
     <div class="container ct-1">
         <h2 class="player">PLAYER 1</h2>
-        <div class="player-score">0</div>
+        <div class="score p1-score">0</div>
         <div class="score-container">
             <span>CURRENT</span>
-            <div class="current-score">0</div>
+            <div class="hold-score p1-hs">0</div>
         </div>
     </div>
     <div class="container ct-2">
         <h2 class="player">PLAYER 1</h2>
-        <div class="player-score">0</div>
+        <div class="score p2-score">0</div>
         <div class="score-container">
             <span>CURRENT</span>
-            <div class="current-score">0</div>
+            <div class="hold-score p2-hs">0</div>
         </div>
     </div>
 </div>
+<script src="index.js"></script>
 
 
 </body>

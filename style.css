@@ -1,10 +1,9 @@
 body {
     background: linear-gradient(45deg, rgb(198, 5, 62) 0%, rgb(91, 38, 104) 100%);
-    min-height: 97.9vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .rec {
@@ -33,7 +32,7 @@ body {
     background-color: #da8e9c;
 }
 
-.player-score {
+.score {
     font-size: 80px;
     color: #ff0000;
     margin-bottom: 145px;
@@ -56,7 +55,7 @@ body {
 
 }
 
-.current-score {
+.hold-score {
     margin-top: 10px;
     font-size: 35px;
 }
@@ -68,19 +67,19 @@ body {
     border: none;
 }
 
-.btn-ng {
+#btn-ng {
     top: 40px;
     left: 39%;
     padding: 7px 50px;
 }
 
-.btn-rd {
+#btn-rd {
     top: 71%;
     left: 44%;
     padding: 9px 18px;
 }
 
-.btn-ho {
+#btn-ho {
     top: 82%;
     left: 46%;
     padding: 9px 13px;
@@ -92,4 +91,8 @@ body {
     top: 25%;
     left: 46%;
     box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.25);
+}
+
+.hidden {
+    display: none;
 }
