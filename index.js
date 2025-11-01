@@ -1,10 +1,12 @@
 const btnRollDice = document.querySelector('#btn-rd');
+const btnHoldDice = document.querySelector('#btn-ho');
 const dice = document.querySelector('.dice');
 
 let playerTurn = 1;
 let currentScore = document.querySelector(`.p${playerTurn}-hs`);
 
-let p1Score = document.querySelector();
+// let playerScore = document.querySelector(`.player-${playerTurn}`);
+
 
 
 const funcRollDice = () => {
@@ -14,9 +16,13 @@ const funcRollDice = () => {
     if (randomDice === 1) {
         switchTurn(playerTurn);
     }
-
     currentScore.textContent = +currentScore.textContent + randomDice;
+}
 
+const funcHoldDice = () => {
+    const playerScore = document.querySelector(`.player-${playerTurn}`);
+    playerScore.textContent = +playerScore.textContent  + +currentScore.textContent;
+    switchTurn(playerTurn);
 }
 
 const switchTurn = (turn) => {
@@ -33,3 +39,4 @@ const switchTurn = (turn) => {
 }
 
 btnRollDice.addEventListener('click', funcRollDice);
+btnHoldDice.addEventListener('click', funcHoldDice);
