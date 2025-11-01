@@ -1,31 +1,35 @@
-console.log('sadsdasdqq')
 const btnRollDice = document.querySelector('#btn-rd');
-const btnHoldDice = document.querySelector('#btn-ho');
 const dice = document.querySelector('.dice');
-let holdScore = 0;
+
+let playerTurn = 1;
+let currentScore = document.querySelector(`.p${playerTurn}-hs`);
+
+let p1Score = document.querySelector();
 
 
-const p1 = {
-    score: 0,
-    turn: true
-}
-
-const p2 = {
-    score: 0,
-    turn: false
-}
-
-const rollDice = () => {
-    const randomDice = Math.floor(Math.random() * 6) + 1;
-    dice.src = `dice-${randomDice}.png`;
+const funcRollDice = () => {
+    const randomDice = Math.floor(Math.random() * 6) + 1; // dice num 1-6        
     dice.classList.remove('hidden');
-        
-    
-    
+    dice.src = `dice-${randomDice}.png`;
+    if (randomDice === 1) {
+        switchTurn(playerTurn);
+    }
+
+    currentScore.textContent = +currentScore.textContent + randomDice;
+
 }
 
-const holdDice = () => {
-   
+const switchTurn = (turn) => {
+    if (turn === 1) {
+        playerTurn = 2;
+        currentScore.textContent = '0';
+        currentScore = document.querySelector(`.p${playerTurn}-hs`);
+    } else if (turn === 2) {
+        playerTurn = 1;
+        currentScore.textContent = '0';
+        currentScore = document.querySelector(`.p${playerTurn}-hs`);
+    }
+
 }
 
-
+btnRollDice.addEventListener('click', funcRollDice);
